@@ -21,7 +21,7 @@ module "ecs" {
   public_subnet_ids  = module.vpc.public_subnet_ids
   private_subnet_ids = module.vpc.private_subnet_ids
 
-  app_image        = "my-node-app:latest"
+  app_image        = "ahmedeldaly097/my-node-app:2.0"
   container_memory = 256
   container_port   = 80
   target_group_arn = module.alb.target_group_arn
